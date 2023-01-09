@@ -68,9 +68,9 @@
     OR
 
 	Fetch and replace the config file.
-	```bash 
-    wget [link]
-    ```
+
+    [Example config](https://github.com/shashidhar-p/integration-magma/blob/main/omec-gnbsim/config/gnbsim.yaml)
+
 
 5. Run gNB sim with the config file.
 
