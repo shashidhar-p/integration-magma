@@ -118,16 +118,18 @@ OR
 
     [Example config](https://github.com/shashidhar-p/integration-magma/blob/main/omec-gnbsim/config/gnbsim.yaml)
 
-6. Bring up docker
+6. Enable the profiles to be executed.(enable=true in config/gnbsim.yaml)
+
+7. Bring up docker
    ```bash
     docker run -t -d -P -v /home/vagrant/gnbsim/config:/gnbsim/bin/config --name gnbsim 5gc-gnbsim:0.0.1-dev
    ```
 
-7. Run gNB sim with the config file.
+8. Run gNB sim with the config file.
    ```bash
     docker exec -it gnbsim sh -c "./gnbsim --cfg config/gnbsim.yaml"
    ```
-8. To run the enabled profiles:
+9. To run the enabled profiles:
    ```bash
     docker exec -it gnbsim sh -c "curl -i -X GET 127.0.0.1:8080/gnbsim/v1/executeConfigProfile"
    ```
