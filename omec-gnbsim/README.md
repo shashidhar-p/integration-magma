@@ -122,7 +122,7 @@ OR
 
 7. Bring up docker
    ```bash
-    docker run -t -d -P -v /home/vagrant/gnbsim/config:/gnbsim/bin/config --name gnbsim 5gc-gnbsim:0.0.1-dev
+    docker run -t -d -P -v /home/vagrant/gnbsim/config:/gnbsim/bin/config --net=host --name gnbsim 5gc-gnbsim:0.0.1-dev 
    ```
 
 8. Run gNB sim with the config file.
