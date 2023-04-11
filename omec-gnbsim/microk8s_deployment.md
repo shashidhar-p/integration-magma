@@ -48,7 +48,9 @@
    ```bash
    kubectl get pods -A | grep multus
    ```
-
+   
+- - -
+<br/>
 
 ## Deployment:
 1. Create Network Attachment Definition
